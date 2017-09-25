@@ -2,6 +2,8 @@ from flask import Flask, url_for, request
 from flask import make_response
 from flask import render_template
 from werkzeug import utils
+
+from flask import abort, redirect
 app = Flask(__name__)
 
 @app.route('/')
@@ -10,7 +12,12 @@ def index(): # session recommended
 
     resp = make_response(render_template('index.html'))
     resp.set_cookie('username','the username')
-    return resp
+    if 1==1:
+        return resp
+    if str() == 'redirect':
+        return redirect(url_for('login'))
+        abort(401)
+        #no_excute()
 
 @app.route('/login', method = ['GET', 'POST'])
 def login():
