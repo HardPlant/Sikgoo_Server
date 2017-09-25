@@ -21,11 +21,12 @@ def login():
         <p><input type=submit value=Login>
     </form
     '''
-@app,route('/logout')
+@app.route('/logout')
 def logout():
     session.pop('username', None)
     return redirect(url_for('index'))
-
+import os
+os.urandom(24) # makes 24 length hex key
 app.secret_key = 'Something_Key_Do_Not_Hardcode'
 
 if __name__ == '__main__':
