@@ -1,4 +1,5 @@
 from flask import Flask, url_for, request
+from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -22,6 +23,11 @@ with app.test_request_context():
     print url_for('login', next='/') # Get Params
     print url_for('profile', username = 'John doe')
     #print url_for('static', filename='style.css')
+
+@app.route('/hello')
+@app.route('/hello/<name<')
+def hello(name=None):
+    return render_template('hello.html',name=name)
 
 if __name__ == '__main__':
     app.run()
