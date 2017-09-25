@@ -4,8 +4,12 @@ from werkzeug import utils
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    pass
+def index(): # session recommended
+    username = request.cookies.get('username')
+
+    resp = make_response(render_template('index.html'))
+    resp.set_cookie('username','the username')
+    return resp
 
 @app.route('/login', method = ['GET', 'POST'])
 def login():
