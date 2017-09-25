@@ -29,5 +29,9 @@ with app.test_request_context():
 def hello(name=None):
     return render_template('hello.html',name=name)
 
+with app.test_request_context('/hello', method='POST'): # context manager test
+    assert request.path == '/hello'
+    assert request.method == 'POST'
+
 if __name__ == '__main__':
     app.run()
