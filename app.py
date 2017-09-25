@@ -17,6 +17,11 @@ def login():
         error = 'Invalid username/password'
 
     return render_template('login.html', error=error)
+@app.route('/upload', method = ['GET', 'POST'])
+def upload_file():
+    if request.methd == 'POST':
+        f = request.files['the_file']
+        f.save('/var/www/uploads/uploaded_file.txt')
 
 @app.route('/user/<username>')
 def profile(username):
