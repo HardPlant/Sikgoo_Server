@@ -57,5 +57,9 @@ with app.test_request_context('/hello', method='POST'): # context manager test
     assert request.path == '/hello'
     assert request.method == 'POST'
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('page_not_found.html'), 404 # 404 means return code; default 200
+
 if __name__ == '__main__':
     app.run()
