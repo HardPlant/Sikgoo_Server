@@ -11,6 +11,7 @@ def index(): # session recommended
     username = request.cookies.get('username')
 
     resp = make_response(render_template('index.html'))
+    resp.headers['HTTP-HEADER'] = 'Header!'
     resp.set_cookie('username','the username')
     if 1==1:
         return resp
