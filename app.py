@@ -1,5 +1,6 @@
 from flask import Flask, url_for, request
 from flask import render_template
+from werkzeug import utils
 app = Flask(__name__)
 
 @app.route('/')
@@ -21,7 +22,8 @@ def login():
 def upload_file():
     if request.methd == 'POST':
         f = request.files['the_file']
-        f.save('/var/www/uploads/uploaded_file.txt')
+        #f.save('/var/www/uploads/uploaded_file.txt')
+        f.save('/var/www/uploads/' + utils.secure_filename(f.filename))
 
 @app.route('/user/<username>')
 def profile(username):
