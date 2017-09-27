@@ -9,9 +9,11 @@ db_session = scoped_session(sessionmaker(autocommit=False,
 Base = declarative_base()
 Base.query = db_session.query_property()
 
+
 def init_db():
     #import myapp.model
     Base.metadata.create_all(bind=engine)
+
 
 def test_init_db():
     engine = create_engine('sqlite:///:memory:', convert_unicode=True)

@@ -11,6 +11,7 @@ os.urandom(24) # makes 24 length hex key
 app = Flask(__name__)
 json = FlaskJSON(app)
 
+
 def init_db():
     if app.config['TESTING']:
         global engine, db_session, Base
