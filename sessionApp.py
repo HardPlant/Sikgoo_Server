@@ -1,5 +1,5 @@
 from flask import Flask, session, redirect, url_for, escape, request
-from flask_json import FlaskJSON, json_response
+from flask_json import FlaskJSON, json_response, JsonError, as_json
 import database
 from datetime import datetime
 
@@ -51,6 +51,23 @@ app.secret_key = 'Something_Key_Do_Not_Hardcode'
 def get_time():
     now = datetime.utcnow()
     return json_response(time=now)
+
+
+@app.route('/increment_value', methods=['POST'])
+def increment_value():
+    data = request.get_json(force=True) # skim mimetype, have shorte curl command
+    try:
+        value = int(data['value'])
+    except (KeyError,TypeError, ValueError):
+        raise JsonError(description='Invalid value.')
+    return json_response(value=value+1)
+
+
+@app.route('/get_value')
+@as_json
+def get_value():
+    return dict(value=12)
+
 
 if __name__ == '__main__':
     app.run()

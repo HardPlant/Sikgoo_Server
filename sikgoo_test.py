@@ -34,6 +34,23 @@ class TestCase(unittest.TestCase):
         assert '"status": 200' in rv.data
         assert '"time": ' in rv.data
 
+    def test_get_value(self):
+        rv = self.app.get('/get_value')
+        assert '"value": 12' in rv.data
+
+    def test_invalid_data(self):
+        rv = self.app.post('/increment_value', data=dict(
+            data='bla'
+        ))
+        assert '"status": 400' in rv.data
+        assert '"description": "Not a JSON."' in rv.data
+
+    def test_json(self):
+        rv = self.app.get('/get_value')
+
+        assert 'value' in rv.json
+        assert type(rv.json['value']) is int
+
 
 if __name__ == '__main__':
     unittest.main()
