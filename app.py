@@ -1,10 +1,14 @@
 from flask import Flask, url_for, request
 from flask import make_response
 from flask import render_template
+from flask_json import FlaskJSON
 from werkzeug import utils
+import database
+import models
 
 from flask import abort, redirect
 app = Flask(__name__)
+json = FlaskJSON(app)
 
 @app.route('/')
 def index(): # session recommended
@@ -20,18 +24,16 @@ def index(): # session recommended
         abort(401)
         #no_excute()
 
-@app.route('/login', method = ['GET', 'POST'])
+@app.route('/login', methods = ['GET', 'POST'])
 def login():
     error = None
     if request.method == 'POST':
-        if valid_login(request.form['username'],
-                       request.form['password']):
-            return log_the_user_in(request.form['username'])
+        pass
     else:
         error = 'Invalid username/password'
 
     return render_template('login.html', error=error)
-@app.route('/upload', method = ['GET', 'POST'])
+@app.route('/upload', methods = ['GET', 'POST'])
 def upload_file():
     if request.methd == 'POST':
         f = request.files['the_file']
