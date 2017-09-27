@@ -1,5 +1,3 @@
-import os
-import tempfile
 import unittest
 
 from flask_json import JsonTestResponse
@@ -7,7 +5,7 @@ from flask_json import JsonTestResponse
 import sessionApp
 
 
-class FlaskrTestCase(unittest.TestCase):
+class TestCase(unittest.TestCase):
 
     def setUp(self):
         sessionApp.app.config['TESTING'] = True
@@ -35,7 +33,6 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/time')
         assert '"status": 200' in rv.data
         assert '"time": ' in rv.data
-
 
 
 if __name__ == '__main__':
