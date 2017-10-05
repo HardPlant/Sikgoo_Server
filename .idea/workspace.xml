@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a4e1d6-537f-4d91-96b6-10e7f10cb7fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room_matcher.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sessionApp.py" afterPath="$PROJECT_DIR$/sessionApp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sikgoo_test.py" afterPath="$PROJECT_DIR$/sikgoo_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
           <file leaf-file-name="sessionApp.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sessionApp.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="692">
-                  <caret line="94" column="22" lean-forward="false" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+                <state relative-caret-position="369">
+                  <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#75#0" expanded="true" />
                   </folding>
@@ -79,8 +77,8 @@
           <file leaf-file-name="sikgoo_test.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="497">
-                  <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+                <state relative-caret-position="668">
+                  <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -534,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506527184484</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="daily update">
+      <created>1507214880960</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1507214880960</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -632,7 +637,8 @@
     <MESSAGE value="unimport" />
     <MESSAGE value="PEP conventions" />
     <MESSAGE value="JSONs imported" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONs imported" />
+    <MESSAGE value="daily update" />
+    <option name="LAST_COMMIT_MESSAGE" value="daily update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,22 +909,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
+    <entry file="file://$PROJECT_DIR$/sessionApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="369">
+          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sessionApp.py">
+    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="94" column="22" lean-forward="false" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+        <state relative-caret-position="668">
+          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
           <folding>
-            <element signature="e#0#75#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

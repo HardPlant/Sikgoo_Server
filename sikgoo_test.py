@@ -70,6 +70,27 @@ class TestCase(unittest.TestCase):
 
         print rv.json
 
+class FunctionalTest(unittest.TestCase):
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+    def match_post(self):
+        pass
+
+    def match_get_empty(self):
+        pass
+
+    def match_get_human(self):
+        pass
+
+class IntegrationTest(unittest.TestCase):
+    pass
+
+class MatcherTest(unittest.TestCase):
+    pass
 
 if __name__ == '__main__':
     unittest.main()
