@@ -2,6 +2,7 @@ import unittest
 from room_matcher import RoomMatcher, User
 from random import randrange, randint
 import datetime
+import flask
 
 def random_date(start, l):
     current = start
