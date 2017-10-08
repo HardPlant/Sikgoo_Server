@@ -2,7 +2,19 @@ import unittest
 from room_matcher import RoomMatcher, User
 from random import randrange, randint
 import datetime
-import flask
+import room_match_request
+
+
+class FuntionalTest(unittest.TestCase):
+    def setUp(self):
+        self.app = room_match_request.app.test_client()
+
+    def tearDown(self):
+        pass
+
+    def test_empty_queue(self):
+        rv = self.app.get('/')
+        self.assertEqual(rv['status'],200)
 
 def random_date(start, l):
     current = start
@@ -10,6 +22,7 @@ def random_date(start, l):
         curr = current + datetime.timedelta(minutes=randrange(60))
         yield curr
         l-=1
+
 
 def getRandomUser(count):
     list = []
@@ -25,8 +38,7 @@ def getRandomUser(count):
     return list
 
 
-
-class FunctionalTest(unittest.TestCase):
+class UnitTest(unittest.TestCase):
     def setUp(self):
         self.matcher = RoomMatcher()
         print()
@@ -63,15 +75,15 @@ class FunctionalTest(unittest.TestCase):
         print(users)
         for user in users:
             self.matcher.enqueue(user)
-        print("Odd: %d" % odd)
-        print("Enqueue Completed")
+        #print("Odd: %d" % odd)
+        #print("Enqueue Completed")
         count = 0
         for turn in range(0,odd):
             matched = self.matcher.match()
             if len(matched) == 0: break
             count = count + 1
-            print("matched %d :" % count)
-            print(matched)
+            #print("matched %d :" % count)
+            #print(matched)
 
         self.assertEqual(count, int(odd/2))
 
@@ -82,15 +94,15 @@ class FunctionalTest(unittest.TestCase):
         print(users)
         for user in users:
             self.matcher.enqueue(user)
-        print("Odd: %d" % odd)
-        print("Enqueue Completed")
+        #print("Odd: %d" % odd)
+        #print("Enqueue Completed")
         count = 0
         for turn in range(0,odd):
             matched = self.matcher.match()
             if len(matched) == 0: break
             count = count + 1
-            print("matched %d :" % count)
-            print(matched)
+            #print("matched %d :" % count)
+            #print(matched)
 
         self.assertEqual(count, int(odd/2))
 
