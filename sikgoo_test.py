@@ -61,15 +61,6 @@ class TestCase(unittest.TestCase):
         assert 'value' in rv.json
         assert type(rv.json['value']) is int
 
-    def test_match_enqueue(self):
-        param = dict(
-            value=10
-        )
-        rv = self.app.post('/match_room', data=
-                           json.dumps(param))
-
-        print rv.json
-
 class FunctionalTest(unittest.TestCase):
     def setUp(self):
         pass
