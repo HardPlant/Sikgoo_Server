@@ -60,13 +60,5 @@ def match_room():
 
     return abort(500)
 
-
-with app.test_request_context():
-    print url_for('index') # func -> url
-    print url_for('login')
-    print url_for('login', next='/') # Get Params
-    print url_for('profile', username = 'John doe')
-    #print url_for('static', filename='style.css')
-
 if __name__ == '__main__':
     app.run()
