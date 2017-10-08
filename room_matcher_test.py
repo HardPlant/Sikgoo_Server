@@ -18,9 +18,14 @@ class FuntionalTest(unittest.TestCase):
 
     def test_empty_queue(self):
         rv = self.app.get('/match_room')
-        print(rv)
-        print(rv.data)
         self.assertTrue('404' in rv.data)
+
+    def test_post(self):
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=1
+        )))
+        print(rv.data)
+        self.assertTrue('1' in rv.data)
 
 def random_date(start, l):
     current = start

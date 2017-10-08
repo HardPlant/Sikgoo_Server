@@ -48,18 +48,18 @@ def match_room():
         if not result:
             abort(404)
         else:
-            return jsonify(result)
+            return result
 
     if request.method == 'POST':
-        param = request.get_json()
+        param = request.get_json(force=True)
 
         try:
             id = int(param['id'])
-            name = int(param['name'])
             user = User(id,datetime.datetime.now())
             matcher.enqueue(user)
             return jsonify(user)
-        except (KeyError,TypeError, ValueError):
+        except (KeyError,TypeError, ValueError) as e:
+            print(e)
             return abort(500)
             # raise JsonError(description='Invalid value.')
 
@@ -69,6 +69,10 @@ def match_room():
 @app.errorhandler(404)
 def page_not_found(e):
     return jsonify(error=404, text=str(e)), 404
+
+@app.errorhandler(500)
+def internal_error(e):
+    return jsonify(error=500, text=str(e)), 500
 
 if __name__ == '__main__':
     app.run()
