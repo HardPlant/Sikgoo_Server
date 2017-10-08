@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a4e1d6-537f-4d91-96b6-10e7f10cb7fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room_match_request.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/room_matcher_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room_matcher.py" afterPath="$PROJECT_DIR$/room_matcher.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room_match_request.py" afterPath="$PROJECT_DIR$/room_match_request.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sessionApp.py" afterPath="$PROJECT_DIR$/sessionApp.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +21,7 @@
           <file leaf-file-name="sessionApp.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sessionApp.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
+                <state relative-caret-position="331">
                   <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#75#0" expanded="true" />
@@ -33,8 +33,8 @@
           <file leaf-file-name="room_matcher.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/room_matcher.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <state relative-caret-position="380">
+                  <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -43,9 +43,11 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-334">
-                  <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-                  <folding />
+                <state relative-caret-position="654">
+                  <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -53,9 +55,11 @@
           <file leaf-file-name="room_match_request.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/room_match_request.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="597">
-                  <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-                  <folding />
+                <state relative-caret-position="133">
+                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -101,8 +105,8 @@
           <file leaf-file-name="sikgoo_test.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="61">
-                  <caret line="43" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="19" />
+                <state relative-caret-position="-942">
+                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -113,8 +117,8 @@
           <file leaf-file-name="room_matcher_test.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="32" />
+                <state relative-caret-position="380">
+                  <caret line="74" column="43" lean-forward="true" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -181,12 +185,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/hello.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/database.py" />
-        <option value="$PROJECT_DIR$/sessionApp.py" />
         <option value="$PROJECT_DIR$/sikgoo_test.py" />
         <option value="$PROJECT_DIR$/room_matcher_test.py" />
         <option value="$PROJECT_DIR$/room_matcher.py" />
+        <option value="$PROJECT_DIR$/sessionApp.py" />
+        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/room_match_request.py" />
       </list>
     </option>
@@ -281,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Matcher_Test">
+  <component name="RunManager" selected="Python.app">
     <configuration name="Matcher_Test" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -648,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507215013707</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="about room matcher">
+      <created>1507460358875</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1507460358875</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -784,7 +795,8 @@
     <MESSAGE value="JSONs imported" />
     <MESSAGE value="daily update" />
     <MESSAGE value="test skeletion updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="test skeletion updated" />
+    <MESSAGE value="about room matcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="about room matcher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,19 +1208,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sessionApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="331">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
@@ -1216,10 +1218,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
+    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="-942">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -1228,25 +1230,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/room_matcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="654">
+          <caret line="91" column="22" lean-forward="true" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="74" column="43" lean-forward="true" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/room_match_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

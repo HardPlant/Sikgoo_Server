@@ -71,26 +71,6 @@ def get_value():
     return dict(value=12)
 
 
-@app.route('/match_room', methods=['GET','POST'])
-def match_room():
-    if request.method == 'GET':
-        result = matcher.match()
-        if not result:
-            abort(404)
-        else:
-            return json_response(result)
-
-    if request.method == 'POST':
-        param = request.get_json()
-
-        try:
-            id = int(param['id'])
-        except (KeyError,TypeError, ValueError):
-            raise JsonError(description='Invalid value.')
-
-        matcher.enqueue(id)
-        return True
-
 
 if __name__ == '__main__':
     app.run()
