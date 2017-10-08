@@ -73,11 +73,11 @@ def matcher_reset():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return jsonify(error=404, text=str(e)), 404
+    return jsonify(error=404), 404
 
 @app.errorhandler(500)
 def internal_error(e):
-    return jsonify(error=500, text=str(e)), 500
+    return jsonify(error=500), 500
 
 if __name__ == '__main__':
     app.run()
