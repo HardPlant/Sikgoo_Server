@@ -25,9 +25,8 @@ class RoomMatcher(object):
         return len(self.queue) > 2
 
 
-class User(object):
+class User(dict):
     def __init__(self, id, time = datetime.datetime.now()):
-        self.id = id
-        self.time = time
+        dict.__init__(self, id=id, time=time)
 
 
