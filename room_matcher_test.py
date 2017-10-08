@@ -14,7 +14,7 @@ class FuntionalTest(unittest.TestCase):
         self.app = room_match_request.app.test_client()
 
     def tearDown(self):
-        pass
+        rv = self.app.post('/match_reset')
 
     def test_empty_queue(self):
         rv = self.app.get('/match_room')
@@ -24,8 +24,17 @@ class FuntionalTest(unittest.TestCase):
         rv = self.app.post('/match_room', data=json.dumps(dict(
             id=1
         )))
-        print(rv.data)
         self.assertTrue('1' in rv.data)
+
+    def test_post_one(self):
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=1
+        )))
+        self.assertTrue('1' in rv.data)
+        rv = self.app.get('/match_room')
+        print(rv.data)
+        self.assertTrue('404' in rv.data)
+
 
 def random_date(start, l):
     current = start
