@@ -1,3 +1,4 @@
+import json
 import datetime
 
 class RoomMatcher(object):
@@ -25,6 +26,8 @@ class RoomMatcher(object):
 
 
 class User(object):
-    def __init__(self, id, time):
+    def __init__(self, id, time = datetime.datetime.now()):
         self.id = id
         self.time = time
+
+
