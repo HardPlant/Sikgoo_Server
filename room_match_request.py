@@ -65,6 +65,11 @@ def match_room():
 
     return abort(500)
 
+@app.route('/match_reset', methods = ['POST'])
+@as_json
+def matcher_reset():
+    matcher.clear()
+    return matcher.queue
 
 @app.errorhandler(404)
 def page_not_found(e):
