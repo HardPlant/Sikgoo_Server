@@ -32,9 +32,63 @@ class FuntionalTest(unittest.TestCase):
         )))
         self.assertTrue('1' in rv.data)
         rv = self.app.get('/match_room')
-        print(rv.data)
         self.assertTrue('404' in rv.data)
 
+    def test_post_two(self):
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=1
+        )))
+        self.assertTrue('1' in rv.data)
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=2
+        )))
+        rv = self.app.get('/match_room')
+        self.assertFalse('404' in rv.data)
+
+    def test_post_three(self):
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=1
+        )))
+        self.assertTrue('1' in rv.data)
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=2
+        )))
+        self.assertTrue('1' in rv.data)
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=3
+        )))
+        rv = self.app.get('/match_room')
+        print(rv.data)
+        self.assertFalse('"id": 3' in rv.data)
+        self.assertFalse('404' in rv.data)
+
+        rv = self.app.get('/match_room')
+        self.assertTrue('404' in rv.data)
+
+    def test_post_four(self):
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=1
+        )))
+        self.assertTrue('1' in rv.data)
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=2
+        )))
+        self.assertTrue('2' in rv.data)
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=3
+        )))
+        rv = self.app.post('/match_room', data=json.dumps(dict(
+            id=3
+        )))
+        rv = self.app.get('/match_room')
+        self.assertFalse('"id": 3' in rv.data)
+        self.assertFalse('404' in rv.data)
+        rv = self.app.get('/match_room')
+        self.assertTrue('"id": 3' in rv.data)
+        self.assertFalse('404' in rv.data)
+
+        rv = self.app.get('/match_room')
+        self.assertTrue('404' in rv.data)
 
 def random_date(start, l):
     current = start
@@ -61,7 +115,8 @@ def getRandomUser(count):
 class UnitTest(unittest.TestCase):
     def setUp(self):
         self.matcher = RoomMatcher()
-        print()
+        print('')
+
     def tearDown(self):
         self.matcher.clear()
 
