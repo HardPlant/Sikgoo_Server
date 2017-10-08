@@ -17,11 +17,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sessionApp.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="sessionApp.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sessionApp.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
-                  <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="46" />
+                <state relative-caret-position="354">
+                  <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#75#0" expanded="true" />
                   </folding>
@@ -42,8 +42,8 @@
           <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="80" column="50" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="80" selection-end-column="50" />
+                <state relative-caret-position="198">
+                  <caret line="79" column="51" lean-forward="true" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
                   <folding>
                     <element signature="e#0#50#0" expanded="true" />
                   </folding>
@@ -51,11 +51,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="room_match_request.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="room_match_request.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/room_match_request.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="711">
-                  <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+                <state relative-caret-position="399">
+                  <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
                   <folding>
                     <element signature="e#0#50#0" expanded="true" />
                   </folding>
@@ -104,8 +104,8 @@
           <file leaf-file-name="sikgoo_test.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-942">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="304">
+                  <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -116,8 +116,8 @@
           <file leaf-file-name="room_matcher_test.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+                <state relative-caret-position="303">
+                  <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -170,6 +170,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>post</find>
+      <find>json</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,8 +191,8 @@
         <option value="$PROJECT_DIR$/room_matcher.py" />
         <option value="$PROJECT_DIR$/sessionApp.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/room_matcher_test.py" />
         <option value="$PROJECT_DIR$/room_match_request.py" />
+        <option value="$PROJECT_DIR$/room_matcher_test.py" />
       </list>
     </option>
   </component>
@@ -284,14 +286,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python tests.Matcher_Test">
     <configuration name="Matcher_Test" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="C:\Users\KANG\AppData\Local\Programs\Python\Python36-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Sikgoo_Server" />
@@ -679,38 +681,52 @@
       <option name="project" value="LOCAL" />
       <updated>1507462081728</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="delete app_text_context">
+      <created>1507462232128</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1507462232128</updated>
+    </task>
+    <task id="LOCAL-00025" summary="removed prints">
+      <created>1507462396907</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1507462396907</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 38m 35s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 36m 41s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 38m 54s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 38m 03s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 39m 14s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 38m 52s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 39m 33s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 40m 01s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 39m 53s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 41m 19s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 40m 38s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 41m 51s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 41m 06s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 42m 02s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 42m 38s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 42m 10s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 42m 51s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 44m 00s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Matcher_Test - 2017.10.08 at 19h 43m 19s.xml">
+    <history-entry file="Matcher_Test - 2017.10.08 at 20h 44m 20s.xml">
       <configuration name="Matcher_Test" configurationId="tests" />
     </history-entry>
   </component>
@@ -794,8 +810,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add many files" />
-    <MESSAGE value="hello" />
     <MESSAGE value="to render templates" />
     <MESSAGE value="context manager" />
     <MESSAGE value="request login" />
@@ -819,7 +833,9 @@
     <MESSAGE value="request" />
     <MESSAGE value="get indepenantable" />
     <MESSAGE value="test it" />
-    <option name="LAST_COMMIT_MESSAGE" value="test it" />
+    <MESSAGE value="delete app_text_context" />
+    <MESSAGE value="removed prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed prints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1231,16 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-942">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/room_matcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1249,42 +1255,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sessionApp.py">
+    <entry file="file://$PROJECT_DIR$/room_match_request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="399">
+          <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
           <folding>
-            <element signature="e#0#75#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="80" column="50" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="80" selection-end-column="50" />
+        <state relative-caret-position="198">
+          <caret line="79" column="51" lean-forward="true" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
+    <entry file="file://$PROJECT_DIR$/sikgoo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="304">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room_match_request.py">
+    <entry file="file://$PROJECT_DIR$/sessionApp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="354">
+          <caret line="61" column="34" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room_matcher_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

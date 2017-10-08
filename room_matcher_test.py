@@ -1,20 +1,26 @@
 import unittest
 from room_matcher import RoomMatcher, User
 from random import randrange, randint
+from flask_json import JsonTestResponse
+import json
 import datetime
 import room_match_request
 
 
 class FuntionalTest(unittest.TestCase):
     def setUp(self):
+        room_match_request.app.config['TESTING'] = True
+        room_match_request.app.response_class = JsonTestResponse
         self.app = room_match_request.app.test_client()
 
     def tearDown(self):
         pass
 
     def test_empty_queue(self):
-        rv = self.app.get('/')
-        self.assertEqual(rv['status'],200)
+        rv = self.app.get('/match_room')
+        print(rv)
+        print(rv.data)
+        self.assertTrue('404' in rv.data)
 
 def random_date(start, l):
     current = start
@@ -45,7 +51,7 @@ class UnitTest(unittest.TestCase):
     def tearDown(self):
         self.matcher.clear()
 
-    def test_empty(self):
+    def empty(self):
         for i in range(0,2):
             with self.subTest(i=i):
                 users = getRandomUser(i)
@@ -72,7 +78,7 @@ class UnitTest(unittest.TestCase):
         odd = 13
         users = getRandomUser(odd)
         self.assertEqual(self.matcher.queue,[])
-        print(users)
+        #print(users)
         for user in users:
             self.matcher.enqueue(user)
         #print("Odd: %d" % odd)
@@ -91,7 +97,7 @@ class UnitTest(unittest.TestCase):
         odd = 28
         users = getRandomUser(odd)
         self.assertEqual(self.matcher.queue,[])
-        print(users)
+        #print(users)
         for user in users:
             self.matcher.enqueue(user)
         #print("Odd: %d" % odd)

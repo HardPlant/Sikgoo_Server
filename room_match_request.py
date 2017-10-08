@@ -1,6 +1,7 @@
 from flask import Flask, url_for, request, jsonify
 from flask import make_response
 from flask import abort, redirect
+from flask_json import FlaskJSON, as_json
 from room_matcher import RoomMatcher, User
 from werkzeug.exceptions import default_exceptions
 from werkzeug.exceptions import HTTPException
@@ -33,10 +34,14 @@ def make_json_app(import_name, **kwargs):
 
     return app
 
-app = make_json_app(__name__)
+#app = make_json_app(__name__)
+app = Flask(__name__)
+json = FlaskJSON(app)
 matcher = RoomMatcher()
 
+
 @app.route('/match_room', methods = ['GET','POST'])
+@as_json
 def match_room():
     if request.method == 'GET':
         result = matcher.match()
@@ -59,6 +64,11 @@ def match_room():
             # raise JsonError(description='Invalid value.')
 
     return abort(500)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return jsonify(error=404, text=str(e)), 404
 
 if __name__ == '__main__':
     app.run()
