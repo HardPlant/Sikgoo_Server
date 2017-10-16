@@ -78,13 +78,13 @@ class FuntionalTest(unittest.TestCase):
             id=3
         )))
         rv = self.app.post('/match_room', data=json.dumps(dict(
-            id=3
+            id=4
         )))
         rv = self.app.get('/match_room')
         self.assertFalse('"id": 3' in rv.data)
         self.assertFalse('404' in rv.data)
         rv = self.app.get('/match_room')
-        self.assertTrue('"id": 3' in rv.data)
+        self.assertTrue('"id": 4' in rv.data)
         self.assertFalse('404' in rv.data)
 
         rv = self.app.get('/match_room')
