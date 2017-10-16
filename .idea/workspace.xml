@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a4e1d6-537f-4d91-96b6-10e7f10cb7fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restaurant/restaurant/polls/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Sikgoo_Server.iml" afterPath="$PROJECT_DIR$/.idea/Sikgoo_Server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/restaurant/db.sqlite3" afterPath="$PROJECT_DIR$/restaurant/restaurant/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/restaurant/polls/models.py" afterPath="$PROJECT_DIR$/restaurant/restaurant/polls/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/restaurant/polls/urls.py" afterPath="$PROJECT_DIR$/restaurant/restaurant/polls/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/restaurant/restaurant/settings.py" afterPath="$PROJECT_DIR$/restaurant/restaurant/restaurant/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/restaurant/restaurant/restaurant/urls.py" afterPath="$PROJECT_DIR$/restaurant/restaurant/restaurant/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,19 +77,43 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/restaurant/restaurant/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="e#644#685#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/restaurant/restaurant/restaurant/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/restaurant/restaurant/polls/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/restaurant/restaurant/polls/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="114">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +166,9 @@
         <option value="$PROJECT_DIR$/room_matcher_test.py" />
         <option value="$PROJECT_DIR$/restaurant/restaurant/polls/views.py" />
         <option value="$PROJECT_DIR$/restaurant/restaurant/polls/urls.py" />
+        <option value="$PROJECT_DIR$/restaurant/restaurant/restaurant/urls.py" />
+        <option value="$PROJECT_DIR$/restaurant/restaurant/restaurant/settings.py" />
+        <option value="$PROJECT_DIR$/restaurant/restaurant/polls/models.py" />
       </list>
     </option>
   </component>
@@ -750,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508169965024</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="django">
+      <created>1508170568260</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1508170568260</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -829,7 +866,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Session Implemented :)" />
     <MESSAGE value="os.urandom()" />
     <MESSAGE value="Brand New Server" />
     <MESSAGE value="revert it?" />
@@ -854,7 +890,8 @@
     <MESSAGE value="clear queue" />
     <MESSAGE value="winner winner chicken dinner" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="django" />
+    <option name="LAST_COMMIT_MESSAGE" value="django" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -959,18 +996,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant/restaurant/polls/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/restaurant/restaurant/restaurant/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#644#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/restaurant/restaurant/restaurant/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/restaurant/restaurant/polls/urls.py">
+    <entry file="file://$PROJECT_DIR$/restaurant/restaurant/polls/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
