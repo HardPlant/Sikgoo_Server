@@ -43,13 +43,6 @@ matcher = RoomMatcher()
 @app.route('/match_room', methods = ['GET','POST'])
 @as_json
 def match_room():
-    if request.method == 'GET':
-        result = matcher.match()
-        if not result:
-            abort(404)
-        else:
-            return result
-
     if request.method == 'POST':
         param = request.get_json(force=True)
 
@@ -57,6 +50,7 @@ def match_room():
             id = int(param['id'])
             user = User(id,datetime.datetime.now())
             matcher.enqueue(user)
+            matcher.match(id)
             return jsonify(user)
         except (KeyError,TypeError, ValueError) as e:
             print(e)

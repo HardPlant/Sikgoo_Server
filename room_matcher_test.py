@@ -80,15 +80,6 @@ class FuntionalTest(unittest.TestCase):
         rv = self.app.post('/match_room', data=json.dumps(dict(
             id=4
         )))
-        rv = self.app.get('/match_room')
-        self.assertFalse('"id": 3' in rv.data)
-        self.assertFalse('404' in rv.data)
-        rv = self.app.get('/match_room')
-        self.assertTrue('"id": 4' in rv.data)
-        self.assertFalse('404' in rv.data)
-
-        rv = self.app.get('/match_room')
-        self.assertTrue('404' in rv.data)
 
 def random_date(start, l):
     current = start
